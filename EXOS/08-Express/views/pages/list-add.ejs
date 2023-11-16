@@ -1,0 +1,7 @@
+<% if(locals.tableau ){ %>
+    <% tableau.forEach(element => { %>
+        <p><%= element %></p>
+    <% }) %>
+<% } else {%>
+    <p style="color: red"> <%= locals.error %> </p>
+<% } %>   

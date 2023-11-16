@@ -1,0 +1,9 @@
+
+<% if(locals.error){ %>
+    <p style="color: red;"><%= error %></p>
+<% } %>
+
+<form action="/add" method="post">
+    <textarea name="msg" id="" cols="30" rows="10"></textarea>
+    <button>Envoi</button>
+</form>

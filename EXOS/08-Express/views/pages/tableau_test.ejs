@@ -1,0 +1,11 @@
+<h1>Tableau test:</h1>
+
+<% if(locals.error) {%>
+    <p><%= error %></p>
+<% } else { %>
+    <% locals.posts.forEach(post =>{%>
+        <h3><%= post.title %></h3>
+        <p><%= post.description %></p>
+        <p><%= post.author %></p>
+    <%})%>
+<%}%>
